@@ -49,7 +49,10 @@ NOTABLE PROJECTS:
 def get_ai_response(user_message):
     """Generate AI response using OpenRouter API"""
     try:
-        api_key = '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'
+        api_key = os.getenv("OPENAI_API_KEY")
+
+        print("🔍 Loaded from .env:  ", repr(api_key))
+
         api_base = 'https://openrouter.ai/api/v1'
         model = "openai/gpt-3.5-turbo"
 
