@@ -44,6 +44,18 @@ NOTABLE PROJECTS:
 1. Journal Management App – Full-stack with Spring Boot, MongoDB, React
 2. Scientific Research Papers Database – Processed 600K entries
 3. PropWorth AI – Real estate valuator with ML models
+
+AI RELATED WORK:
+- Done AI related courses like Deep Learning, Foundations of Machine learning Maths courses like Vector Calculus, Convex Optimization, PCA & Dimensionality reduction techniques
+- Build Neural Networks form scratch as a part of Deep Learning course had hands on DNN, CNN, RNN and Generative Models like Transformers and GANS
+
+CHILDHOOD, ADDRESS and HOBBIES:
+- Hails from village called Kandugula from Karimnagar district Telangana. Now lives in Hyderabad.
+- Completed my schooling from Jawahar Navodaya Vidyalaya at Karimnagar.
+- Completed +2 level at Narayana Junior College Hyderabad
+- Lost parents in my childhood, was brought up by my uncle till my +2 and from B.Tech I started Living on my own
+- Hobbies are to play cricket and listening music. Represented National Level Cricket Team in School across all JNVs. 
+- Passonate, Hopeful, playful and Adventerous. 
 """
 
 def get_ai_response(user_message):
@@ -73,6 +85,7 @@ For common interview questions, respond authentically:
 - Growth areas: Always learning new AI technologies, improving leadership skills
 - Misconceptions: People might think you're only technical, but you understand business impact
 - Pushing boundaries: Taking on complex projects like real-time data sync, learning new technologies
+- Please Answer properly about hobbies, address, and all other generic questions
 """
 
         payload = {
