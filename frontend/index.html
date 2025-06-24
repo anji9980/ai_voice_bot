@@ -4,68 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anji Rontala - AI Voice Interview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta name="description" content="Anji Rontala's AI Voice Interview Assistant for Home.LLC">
 </head>
 <body>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <div class="container">
         <div class="header">
-            <h1>🎤 Anji Rontala</h1>
-            <p>AI Engineer - Voice Interview Assistant</p>
-            <div class="profile-badge">
-                <span>🎓 IIT Hyderabad</span>
-                <span>💼 Turium.ai</span>
-                <span>🚀 AI/ML Expert</span>
+            <div class="title-section">
+                <h1>Anji Rontala</h1>
+                <p>AI Engineer | IIT Hyderabad Graduate</p>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <img src="profile.jpg" alt="Anji Rontala" class="profile-image" id="profileImage">
+            <div>
+                <p>My Voice Interview Assistant. Ask me about my experience and qualifications!</p><br>
+                <div class="profile-badge">
+                    <span><i class="fas fa-graduation-cap"></i> IIT Hyderabad</span>
+                    <span><i class="fas fa-briefcase"></i> Turium.ai</span>
+                    <span><i class="fas fa-code"></i> AI Engineer</span>
+                </div>
             </div>
         </div>
 
         <div class="chat-container" id="chatContainer">
             <div class="message bot-message">
+                <img src="profile.jpg" alt="Anji" class="bot-avatar" id="botAvatar">
                 👋 Hi! I'm Anji Rontala. I'm excited to talk with you about the AI Agent Team position at Home.LLC. 
                 I have experience building AI systems, backend services, and working with enterprise applications. 
-                Click "Start Listening" to begin our conversation!
+                Feel free to type a question or click "Start Asking" to begin our conversation!
             </div>
         </div>
 
         <div class="status hidden" id="status"></div>
 
+        <div class="input-container">
+            <input type="text" id="textInput" class="text-input" placeholder="Type your question here..." aria-label="Type your question">
+            <button id="sendBtn" class="send-btn" aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+
         <div class="controls">
             <button class="btn btn-primary" id="startBtn">
-                🎤 Start Listening
+                <i class="fas fa-microphone"></i> Start Asking
             </button>
             <button class="btn btn-secondary" id="stopBtn" disabled>
-                ⏹️ Stop Listening
+                <i class="fas fa-stop"></i> Stop Asking
             </button>
             <button class="btn btn-danger" id="clearBtn">
-                🗑️ Clear Chat
+                <i class="fas fa-trash"></i> Clear Chat
             </button>
         </div>
 
         <div class="example-questions">
-            <h3>💼 Try asking me:</h3>
+            <h3><i class="fas fa-lightbulb"></i> Try asking me:</h3>
             <div class="question-grid">
                 <div class="question-card" onclick="askQuestion('What should I know about your life story?')">
-                    What's your life story?
+                    <i class="fas fa-book"></i> What's your life story?
                 </div>
                 <div class="question-card" onclick="askQuestion('What is your number one superpower?')">
-                    What's your superpower?
+                    <i class="fas fa-bolt"></i> What's your superpower?
                 </div>
                 <div class="question-card" onclick="askQuestion('Tell me about your experience at Turium.ai')">
-                    Tell me about Turium.ai
+                    <i class="fas fa-briefcase"></i> Tell me about experience at Turium.ai
                 </div>
                 <div class="question-card" onclick="askQuestion('What are the top 3 areas you would like to grow in?')">
-                    What are your growth areas?
+                    <i class="fas fa-chart-line"></i> What are your growth areas?
                 </div>
                 <div class="question-card" onclick="askQuestion('How do you push your boundaries and limits?')">
-                    How do you push boundaries?
+                    <i class="fas fa-rocket"></i> How do you push boundaries?
                 </div>
                 <div class="question-card" onclick="askQuestion('What projects are you most proud of?')">
-                    What projects are you proud of?
+                    <i class="fas fa-trophy"></i> What projects are you proud of?
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>🔊 Click the question cards above or use voice commands</p>
+            <p><i class="fas fa-info-circle"></i> Click the question cards, type a message, or use voice commands</p>
         </div>
     </div>
 
