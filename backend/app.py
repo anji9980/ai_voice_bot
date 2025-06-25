@@ -66,7 +66,8 @@ def get_ai_response(user_message):
         print("🔍 Loaded from .env:  ", repr(api_key))
 
         api_base = 'https://openrouter.ai/api/v1'
-        model = "openai/gpt-3.5-turbo"
+        # model = "openai/gpt-3.5-turbo"
+        model = "mistralai/mistral-7b-instruct"
 
         print("🔍 Using API base:", api_base)
         print("🔑 API Key:", api_key[:10] + "...")
